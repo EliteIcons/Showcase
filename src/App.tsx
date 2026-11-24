@@ -1,5 +1,5 @@
 import {
-  MessageSquare,
+  MessageIcon,
   ExternalLink,
   Plus,
   Sparkles,
@@ -40,7 +40,7 @@ export function App() {
           <article className="project-card featured">
             <div className="card-top">
               <div className="app-icon">
-                <MessageSquare size={26} color="#ccff00" strokeWidth={2} />
+                <MessageIcon size={32} color="#ccff00" strokeWidth={2} />
               </div>
               <span className="tag">MESSAGING / P2P</span>
             </div>
@@ -53,14 +53,14 @@ export function App() {
             <div className="used-icons-strip">
               <span>ICONS USED:</span>
               <div className="mini-icons">
-                <MessageSquare size={16} color="#ccff00" />
+                <MessageIcon size={16} color="#ccff00" />
                 <Video size={16} color="#ccff00" />
                 <Radio size={16} color="#ccff00" />
               </div>
             </div>
 
             <a
-              href="https://shahadah-studs.github.io/Whats-on"
+              href="https://shahadah-studs.github.io/Whats-on/"
               target="_blank"
               rel="noopener noreferrer"
               className="visit-btn"
