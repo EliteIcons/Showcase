@@ -5,6 +5,7 @@ import {
   Sparkles,
   Video,
   Radio,
+  Phone,
 } from 'elite-icons-react';
 
 export function App() {
@@ -18,9 +19,9 @@ export function App() {
           </h1>
         </div>
         <nav className="nav">
-          <a href="https://github.io">GALLERY ↗</a>
-          <a href="https://github.ioGuide/">GUIDE ↗</a>
-          <a href="https://github.ioIcon-Studio/">STUDIO ↗</a>
+          <a href="https://eliteicons.github.io">GALLERY ↗</a>
+          <a href="https://EliteIcons.github.io/Guide/">GUIDE ↗</a>
+          <a href="https://eliteicons.github.io/Icon-Studio/">STUDIO ↗</a>
         </nav>
       </header>
 
@@ -55,7 +56,7 @@ export function App() {
               <div className="mini-icons">
                 <MessageIcon size={16} color="#ccff00" />
                 <Video size={16} color="#ccff00" />
-                <Radio size={16} color="#ccff00" />
+               <Phone size={16} color="#ccff00"  />
               </div>
             </div>
 
