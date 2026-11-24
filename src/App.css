@@ -1,0 +1,246 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000000;
+  color: #ffffff;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.showcase-page {
+  min-height: 100vh;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background: #070707;
+  border-bottom: 1px solid #222222;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.brand h1 {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+}
+
+.brand h1 span,
+.accent {
+  color: #ccff00;
+}
+
+.nav {
+  display: flex;
+  gap: 1.15rem;
+}
+
+.nav a {
+  color: #aaaaaa;
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.nav a:hover {
+  color: #ccff00;
+}
+
+.container {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  border-bottom: 1px solid #222222;
+  padding-bottom: 2rem;
+}
+
+.pill {
+  width: fit-content;
+  font-size: 0.7rem;
+  color: #ccff00;
+  border: 1px solid #3a4700;
+  background: #141a00;
+  padding: 0.25rem 0.6rem;
+}
+
+.hero h2 {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: clamp(2.2rem, 5vw, 3.75rem);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.hero p {
+  color: #999999;
+  font-size: 0.9rem;
+  max-width: 620px;
+  line-height: 1.6;
+}
+
+/* Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  background: #070707;
+  border: 1px solid #262626;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+  transition: border-color 0.15s, transform 0.15s;
+}
+
+.project-card.featured:hover {
+  border-color: #ccff00;
+  transform: translateY(-2px);
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-icon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  background: #141a00;
+  border: 1px solid #3a4700;
+}
+
+.tag {
+  font-size: 0.68rem;
+  color: #ccff00;
+  border: 1px solid #2f3800;
+  padding: 0.2rem 0.5rem;
+}
+
+.project-card h3 {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 1.45rem;
+  font-weight: 800;
+}
+
+.project-card p {
+  font-size: 0.84rem;
+  color: #aaaaaa;
+  line-height: 1.6;
+  flex: 1;
+}
+
+.project-card code {
+  color: #ccff00;
+  background: #121212;
+  padding: 0.1rem 0.35rem;
+}
+
+.used-icons-strip {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.65rem 0.85rem;
+  background: #000000;
+  border: 1px solid #1e1e1e;
+  font-size: 0.68rem;
+  color: #777777;
+}
+
+.mini-icons {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.visit-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: #ccff00;
+  color: #000000;
+  text-decoration: none;
+  font-size: 0.76rem;
+  font-weight: 800;
+  padding: 0.8rem 1rem;
+  border: 1px solid #ccff00;
+  transition: background 0.15s, color 0.15s;
+}
+
+.visit-btn:hover {
+  background: #000000;
+  color: #ccff00;
+}
+
+/* "More Coming Soon" Card */
+.project-card.coming-soon {
+  border: 1px dashed #3a4700;
+  background: radial-gradient(circle at center, #0e1202 0%, #050505 75%);
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.soon-icon {
+  width: 56px;
+  height: 56px;
+  display: grid;
+  place-items: center;
+  border: 1px dashed #ccff00;
+  background: #141a00;
+}
+
+.soon-badge {
+  font-size: 0.68rem;
+  color: #888888;
+}
+
+.submit-btn {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  background: #141a00;
+  border: 1px solid #ccff00;
+  color: #ccff00;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 0.8rem 1rem;
+  transition: background 0.15s, color 0.15s;
+}
+
+.submit-btn:hover {
+  background: #ccff00;
+  color: #000000;
+}
